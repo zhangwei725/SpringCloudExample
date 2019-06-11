@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: client-producer
+
+server:
+  port: 9000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      default-zone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/,http://127.0.0.1:8763/eureka/
